@@ -23,7 +23,7 @@ class Index extends React.Component {
                     <h1>比你还无聊</h1>
                 </div>
                 <div className="content">
-                    <a href="/page/tool/index.html">工具集</a>
+                    <a href="./page/tool/index.html">工具集</a>
                 </div>
                 <div className="footer">
                     <p>
