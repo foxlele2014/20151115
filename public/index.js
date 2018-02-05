@@ -18300,7 +18300,7 @@ var Index = function (_React$Component) {
                     { className: 'content' },
                     _react2.default.createElement(
                         'a',
-                        { href: './page/tool/index.html' },
+                        { href: './view/tool/index.html' },
                         '\u5DE5\u5177\u96C6'
                     )
                 ),
