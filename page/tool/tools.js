@@ -9,6 +9,7 @@ import './index.less';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Layout from '../common';
 import tools from '../../tools/tools';
 
 class Tools extends React.Component {
@@ -16,7 +17,6 @@ class Tools extends React.Component {
         super(props);
 
         this.state = {};
-        console.log(tools);
     }
 
     renderTools(list) {
@@ -56,22 +56,24 @@ class Tools extends React.Component {
 
     render() {
         return (
-            <div className="tools-wrapper">
-                <div className="tools-nav">
-                    {this.renderNav(tools.collection)}
+            <Layout>
+                <div className="tools-wrapper">
+                    <div className="tools-nav">
+                        {this.renderNav(tools.collection)}
+                    </div>
+                    <ul>
+                        {tools.collection.map((opt, i) => {
+                            return (
+                                <li key={i}>
+                                    {opt.collection && opt.collection.length
+                                        ? this.renderTools(opt)
+                                        : null}
+                                </li>
+                            );
+                        })}
+                    </ul>
                 </div>
-                <ul>
-                    {tools.collection.map((opt, i) => {
-                        return (
-                            <li key={i}>
-                                {opt.collection && opt.collection.length
-                                    ? this.renderTools(opt)
-                                    : null}
-                            </li>
-                        );
-                    })}
-                </ul>
-            </div>
+            </Layout>
         );
     }
 }
