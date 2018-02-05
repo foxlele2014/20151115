@@ -4,57 +4,67 @@
 * @Last Modified by:   limin
 * @Last Modified time: 2018-01-02 16:25:17
 */
-const path  = require('path');
-
+const path = require('path');
 
 //多页面的，怎么获取到每个页面的入口js呢？
 const webpackConfig = {
-    entry:{
-        index: path.resolve(__dirname,'page/index/index.js'),
-        tools: path.resolve(__dirname,'page/tool/tools.js')
+    entry: {
+        index: path.resolve(__dirname, 'page/index/index.js'),
+        tools: path.resolve(__dirname, 'page/tool/tools.js')
     },
-    output:{
-        filename:'[name].js',
-        path: path.resolve(__dirname,'public')
+    output: {
+        filename: '[name].js',
+        path: path.resolve(__dirname, 'public')
     },
-    module:{
-        rules:[
+    module: {
+        rules: [
             {
-                test:/\.(js|jsx)$/,
+                test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
-                use:[
+                use: [
                     {
-                        loader:'babel-loader',
-                        options:{
-                            presets: ['env','react']
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['env', 'react']
                         }
                     }
                 ]
             },
             {
-                test:/\.less$/,
-                use:[
+                test: /\.less$/,
+                use: [
                     {
-                        loader:'style-loader'
+                        loader: 'style-loader'
                     },
                     {
-                        loader:'css-loader',
+                        loader: 'css-loader'
                     },
                     {
-                        loader:'less-loader'
+                        loader: 'less-loader'
                     }
                 ]
             },
             {
-                test:/\.(png|jpeg|jpg|gif)$/,
-                use:[
+                test: /\.css$/,
+                use: [
                     {
-                        loader:'file-loader'
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader'
+                    }
+                ]
+            },
+            {
+                test: /\.(png|jpeg|jpg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader'
                     }
                 ]
             }
         ]
     }
-}
+};
 
 module.exports = webpackConfig;
