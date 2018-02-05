@@ -19076,7 +19076,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, ".nav .nav-list .icon {\n  width: 48px;\n  height: 48px;\n}\n.nav .nav-list .tool {\n  background: url('/collection/assets/img/index/tool.png') no-repeat;\n}\n.nav .nav-list > a {\n  display: inline-block;\n}\n.nav .nav-list > a:hover .intro {\n  display: bock;\n}\n.nav .nav-list .intro {\n  display: none;\n  background: rgba(0, 0, 0, 0.5);\n}\n", ""]);
+exports.push([module.i, ".nav .nav-list .icon {\n  width: 100px;\n  height: 100px;\n}\n.nav .nav-list .tool {\n  background: url('/assets/img/index/tool.png') no-repeat;\n  background-size: 100px;\n}\n.nav .nav-list > a {\n  width: 100px;\n  height: 100px;\n  display: inline-block;\n}\n.nav .nav-list > a:hover .intro {\n  display: bock;\n}\n.nav .nav-list .intro {\n  display: none;\n  background: rgba(0, 0, 0, 0.5);\n}\n", ""]);
 
 // exports
 
