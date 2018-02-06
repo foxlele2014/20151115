@@ -20,7 +20,7 @@ class Index extends React.Component {
         return (
             <Layout>
                 <div className="nav">
-                    <List nav={navList} />
+                    <List list={navList} />
                     <p>nothing~</p>
                 </div>
             </Layout>

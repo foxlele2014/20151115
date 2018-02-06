@@ -19059,7 +19059,7 @@ var Index = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'nav' },
-                    _react2.default.createElement(_List2.default, { nav: _nav2.default }),
+                    _react2.default.createElement(_List2.default, { list: _nav2.default }),
                     _react2.default.createElement(
                         'p',
                         null,
