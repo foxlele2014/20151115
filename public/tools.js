@@ -18929,7 +18929,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, ".wrapper {\n  background: #fff;\n  font-size: 12px;\n  color: #000;\n}\n.wrapper .header {\n  height: 64px;\n}\n.wrapper .header .logo {\n  background: url(" + __webpack_require__(32) + ") no-repeat;\n  display: inline-block;\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n}\n.wrapper .content {\n  min-height: 600px;\n  width: 1000px;\n  margin: 0 auto;\n}\n.wrapper .footer {\n  height: 100px;\n  text-align: center;\n  padding: 20px 0;\n}\n", ""]);
+exports.push([module.i, "html,\nbody {\n  margin: 0;\n  padding: 0;\n}\nul,\nol,\nli {\n  list-style: none;\n}\n.wrapper {\n  background: #fff;\n  font-size: 12px;\n  color: #000;\n}\n.wrapper .header {\n  height: 64px;\n}\n.wrapper .header .logo {\n  background: #f1e179 url(" + __webpack_require__(32) + ") no-repeat;\n  display: inline-block;\n  width: 100px;\n  height: 100px;\n  background-size: 100px;\n  border-radius: 50%;\n}\n.wrapper .content {\n  min-height: 600px;\n  width: 1000px;\n  margin: 0 auto;\n}\n.wrapper .footer {\n  height: 100px;\n  text-align: center;\n  padding: 20px 0;\n}\n", ""]);
 
 // exports
 
@@ -18938,7 +18938,7 @@ exports.push([module.i, ".wrapper {\n  background: #fff;\n  font-size: 12px;\n  
 /* 32 */
 /***/ (function(module, exports) {
 
-module.exports = "public/images/b12fb27a12b5a5adbc13df47cd6c7ba8.png";
+module.exports = "public/images/f7dd3f905b6393b9f2756e17a1911b88.png";
 
 /***/ }),
 /* 33 */,
