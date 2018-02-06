@@ -8,19 +8,24 @@
             background: url(~@assets/img/index/tool.png) no-repeat;
             background-size: 100px;
         }
-        > a {
+        a {
             width:100px;
             height:100px;
             display: inline-block;
+            position:relative;
             &:hover {
                 .intro {
-                    display: bock;
+                    display: block;
                 }
             }
         }
         .intro {
             display: none;
+            position:absolute;
+            top:0;
+            left:0;
             background: rgba(0, 0, 0, 0.5);
+            color:#fff;
         }
     }
 }

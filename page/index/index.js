@@ -20,7 +20,7 @@ class Index extends React.Component {
                 <div className="nav">
                     <ul className="nav-list">
                         <li className="icon tool">
-                            <a href="./view/tool/index.html">
+                            <a href="./view/tool/index.html" target="_blank">
                                 <div className="intro">
                                     <h3>工具集</h3>
                                     <p>收集各类经常使用的网站</p>
