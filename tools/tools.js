@@ -1,4 +1,4 @@
-const tools =[
+const tools = [
         {
             "Icon":[
                 {

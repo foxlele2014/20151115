@@ -18962,7 +18962,9 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var List = function List(list) {
+var List = function List(props) {
+    var list = props.list;
+
     return _react2.default.createElement(
         'ul',
         { className: 'list' },
@@ -18970,7 +18972,7 @@ var List = function List(list) {
             var iconName = opt.iconName ? opt.iconName : 'default-icon';
             return _react2.default.createElement(
                 'li',
-                { className: 'list-li icon ' + iconName },
+                { className: 'list-li icon ' + iconName, key: i },
                 _react2.default.createElement(
                     'a',
                     { href: opt.url, target: '_blank' },

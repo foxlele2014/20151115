@@ -1,12 +1,13 @@
 import React from 'react';
 
-const List = list => {
+const List = props => {
+    const { list } = props;
     return (
         <ul className="list">
             {list.map((opt, i) => {
                 const iconName = opt.iconName ? opt.iconName : 'default-icon';
                 return (
-                    <li className={`list-li icon ${iconName}`}>
+                    <li className={`list-li icon ${iconName}`} key={i}>
                         <a href={opt.url} target="_blank">
                             <div className="intro">
                                 <h3>{opt.name}</h3>
