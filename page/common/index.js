@@ -19,11 +19,10 @@ class Layout extends React.Component {
         return (
             <div className="wrapper">
                 <div className="header">
-                    <h1 className="title">
-                        <a href="/">
-                            <span className="logo" />
-                        </a>比你还无聊
-                    </h1>
+                    <a href="/">
+                        <span className="logo" />
+                    </a>
+                    <h1 className="title">比你还无聊</h1>
                     <p className="sub">After all, tomorrow is another day.</p>
                 </div>
                 <div className="content">{children}</div>
