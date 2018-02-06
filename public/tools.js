@@ -18934,7 +18934,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "html,\nbody {\n  margin: 0;\n  padding: 0;\n}\nul,\nol,\nli {\n  list-style: none;\n}\n.wrapper {\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 60px;\n  background: #fff;\n  font-size: 12px;\n  color: #444;\n}\n.wrapper .header {\n  height: 100px;\n  border-bottom: 1px solid #ddd;\n  color: #555;\n}\n.wrapper .header .title {\n  line-height: 100px;\n}\n.wrapper .header .logo {\n  background: url(" + __webpack_require__(32) + ") no-repeat;\n  display: inline-block;\n  width: 93px;\n  height: 93px;\n}\n.wrapper .header .sub {\n  color: #999;\n}\n.wrapper .content {\n  min-height: 600px;\n  width: 1000px;\n  margin: 0 auto;\n}\n.wrapper .footer {\n  height: 100px;\n  text-align: center;\n  padding: 20px 0;\n}\n", ""]);
+exports.push([module.i, "html,\nbody,\ndiv {\n  margin: 0;\n  padding: 0;\n}\nul,\nol,\nli {\n  list-style: none;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin: 0;\n  padding: 0;\n}\np {\n  margin: 0;\n  padding: 0;\n}\n.wrapper {\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 60px;\n  background: #fff;\n  font-size: 12px;\n  color: #444;\n}\n.wrapper .header {\n  height: 120px;\n  border-bottom: 1px solid #ddd;\n  color: #555;\n}\n.wrapper .header .title {\n  height: 100px;\n  line-height: 100px;\n}\n.wrapper .header .logo {\n  background: url(" + __webpack_require__(32) + ") no-repeat;\n  display: inline-block;\n  width: 93px;\n  height: 93px;\n}\n.wrapper .header .sub {\n  color: #999;\n}\n.wrapper .content {\n  min-height: 600px;\n  width: 1000px;\n  margin: 0 auto;\n}\n.wrapper .footer {\n  height: 100px;\n  text-align: center;\n  padding: 20px 0;\n}\n", ""]);
 
 // exports
 
