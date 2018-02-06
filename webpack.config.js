@@ -6,7 +6,7 @@
 */
 const path = require('path');
 
-//多页面的，怎么获取到每个页面的入口js呢？
+//多页面的，怎么获取到每个页面的入口js呢？(提前读取文件夹？获取路径)
 const webpackConfig = {
     entry: {
         index: path.resolve(__dirname, 'page/index/index.js'),
@@ -15,6 +15,14 @@ const webpackConfig = {
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'public')
+    },
+    resolve: {
+        alias: {
+            '@tools': path.resolve(__dirname, 'tools'),
+            '@assets': path.resolve(__dirname, 'assets')
+        },
+        extensions: ['.js', '.json', '.jsx'],
+        modules: ['node_modules']
     },
     module: {
         rules: [
@@ -32,39 +40,19 @@ const webpackConfig = {
             },
             {
                 test: /\.less$/,
-                use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'css-loader'
-                    },
-                    {
-                        loader: 'less-loader'
-                    }
-                ]
+                use: ['style-loader', 'css-loader', 'less-loader']
             },
             {
                 test: /\.css$/,
-                use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'css-loader'
-                    }
-                ]
+                use: ['style-loader', 'css-loader']
             },
             {
                 test: /\.(png|jpeg|jpg|gif)$/,
-                use: [
-                    {
-                        loader: 'file-loader'
-                    }
-                ]
+                use: ['file-loader']
             }
         ]
-    }
+    },
+    plugins: []
 };
 
 module.exports = webpackConfig;
