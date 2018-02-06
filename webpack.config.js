@@ -19,7 +19,8 @@ const webpackConfig = {
     resolve: {
         alias: {
             '@tools': path.resolve(__dirname, 'tools'),
-            '@assets': path.resolve(__dirname, 'assets')
+            '@assets': path.resolve(__dirname, 'assets'),
+            '@components': path.resolve(__dirname, 'components')
         },
         extensions: ['.js', '.json', '.jsx'],
         modules: ['node_modules']
@@ -48,14 +49,15 @@ const webpackConfig = {
             },
             {
                 test: /\.(png|jpeg|jpg|gif)$/,
-                use: [{
-                    loader:'file-loader',
-                    options:{
-                        outputPath:'images/',
-                        publicPath:'public/'
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'images/',
+                            publicPath: 'public/'
+                        }
                     }
-                }],
-                
+                ]
             }
         ]
     },

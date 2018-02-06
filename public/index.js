@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 33);
+/******/ 	return __webpack_require__(__webpack_require__.s = 34);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -18915,8 +18915,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/less-loader/dist/cjs.js!./layout.less", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/less-loader/dist/cjs.js!./layout.less");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/less-loader/dist/cjs.js!./index.less", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/less-loader/dist/cjs.js!./index.less");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -18952,9 +18952,60 @@ module.exports = "public/images/89d218e146971cc4277526db32f6cf98.png";
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var List = function List(list) {
+    return _react2.default.createElement(
+        'ul',
+        { className: 'list' },
+        list.map(function (opt, i) {
+            var iconName = opt.iconName ? opt.iconName : 'default-icon';
+            return _react2.default.createElement(
+                'li',
+                { className: 'list-li icon ' + iconName },
+                _react2.default.createElement(
+                    'a',
+                    { href: opt.url, target: '_blank' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'intro' },
+                        _react2.default.createElement(
+                            'h3',
+                            null,
+                            opt.name
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            opt.description
+                        )
+                    )
+                )
+            );
+        })
+    );
+};
+
+exports.default = List;
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(34);
+__webpack_require__(35);
 
 var _react = __webpack_require__(2);
 
@@ -18964,9 +19015,17 @@ var _reactDom = __webpack_require__(10);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _common = __webpack_require__(29);
+var _Layout = __webpack_require__(29);
 
-var _common2 = _interopRequireDefault(_common);
+var _Layout2 = _interopRequireDefault(_Layout);
+
+var _List = __webpack_require__(33);
+
+var _List2 = _interopRequireDefault(_List);
+
+var _nav = __webpack_require__(38);
+
+var _nav2 = _interopRequireDefault(_nav);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18995,37 +19054,12 @@ var Index = function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                _common2.default,
+                _Layout2.default,
                 null,
                 _react2.default.createElement(
                     'div',
                     { className: 'nav' },
-                    _react2.default.createElement(
-                        'ul',
-                        { className: 'nav-list' },
-                        _react2.default.createElement(
-                            'li',
-                            { className: 'icon tool' },
-                            _react2.default.createElement(
-                                'a',
-                                { href: './view/tool/index.html', target: '_blank' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'intro' },
-                                    _react2.default.createElement(
-                                        'h3',
-                                        null,
-                                        '\u5DE5\u5177\u96C6'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        null,
-                                        '\u6536\u96C6\u5404\u7C7B\u7ECF\u5E38\u4F7F\u7528\u7684\u7F51\u7AD9'
-                                    )
-                                )
-                            )
-                        )
-                    ),
+                    _react2.default.createElement(_List2.default, { nav: _nav2.default }),
                     _react2.default.createElement(
                         'p',
                         null,
@@ -19042,13 +19076,13 @@ var Index = function (_React$Component) {
 _reactDom2.default.render(_react2.default.createElement(Index, null), document.querySelector('#app'));
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(35);
+var content = __webpack_require__(36);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -19073,7 +19107,7 @@ if(false) {
 }
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(7)(undefined);
@@ -19081,16 +19115,34 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, ".nav .nav-list .icon {\n  width: 100px;\n  height: 100px;\n  border: 1px solid #ccc;\n}\n.nav .nav-list .tool {\n  background: url(" + __webpack_require__(36) + ") no-repeat;\n  background-size: 100px;\n}\n.nav .nav-list a {\n  width: 100px;\n  height: 100px;\n  display: inline-block;\n  position: relative;\n}\n.nav .nav-list a:hover .intro {\n  display: block;\n}\n.nav .nav-list .intro {\n  display: none;\n  width: 100%;\n  height: 100%;\n  padding: 5px;\n  box-sizing: border-box;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.5);\n  color: #fff;\n}\n.nav .nav-list .intro h3,\n.nav .nav-list .intro p {\n  font-size: 14px;\n  line-height: 24px;\n}\n", ""]);
+exports.push([module.i, ".nav .tool {\n  background: url(" + __webpack_require__(37) + ") no-repeat;\n  background-size: 100px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = "public/images/073cfa92b20e8036e50b5c8d6a94460a.png";
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = [{
+    url: './view/tool/index.html',
+    name: '工具集',
+    description: '收集各类经常使用的网站',
+    iconName: 'tool',
+    img: ''
+}];
 
 /***/ })
 /******/ ]);

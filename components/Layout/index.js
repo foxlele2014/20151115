@@ -4,7 +4,7 @@
 * @Last Modified by:   limin
 * @Last Modified time: 2018-01-02 16:28:49
 */
-import '../../assets/css/layout.less';
+import './index.less';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

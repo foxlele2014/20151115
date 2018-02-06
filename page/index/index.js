@@ -7,7 +7,9 @@
 import './index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Layout from '../common';
+import Layout from '@components/Layout';
+import List from '@components/List';
+import navList from '@tools/nav';
 
 class Index extends React.Component {
     constructor(props) {
@@ -18,16 +20,7 @@ class Index extends React.Component {
         return (
             <Layout>
                 <div className="nav">
-                    <ul className="nav-list">
-                        <li className="icon tool">
-                            <a href="./view/tool/index.html" target="_blank">
-                                <div className="intro">
-                                    <h3>工具集</h3>
-                                    <p>收集各类经常使用的网站</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                    <List nav={navList} />
                     <p>nothing~</p>
                 </div>
             </Layout>
