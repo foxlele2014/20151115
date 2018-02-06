@@ -18936,9 +18936,9 @@ exports.push([module.i, ".wrapper {\n  background: #fff;\n  font-size: 12px;\n  
 
 /***/ }),
 /* 32 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "b12fb27a12b5a5adbc13df47cd6c7ba8.png";
+module.exports = "public/images/b12fb27a12b5a5adbc13df47cd6c7ba8.png";
 
 /***/ }),
 /* 33 */,

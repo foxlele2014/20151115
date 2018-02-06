@@ -48,7 +48,14 @@ const webpackConfig = {
             },
             {
                 test: /\.(png|jpeg|jpg|gif)$/,
-                use: ['file-loader']
+                use: [{
+                    loader:'file-loader',
+                    options:{
+                        outputPath:'images/',
+                        publicPath:'public/'
+                    }
+                }],
+                
             }
         ]
     },
