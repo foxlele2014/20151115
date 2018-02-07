@@ -1,15 +1,14 @@
 import './index.less';
 import React from 'react';
 
-const List = props => {
-    const { list } = props;
+const Classify = props => {
+    const { items } = props;
     return (
         <ul className="list">
-            {Object.keys(list).map((key, i) => {
-                const opt = list[key];
+            {items.map((opt, j) => {
                 const iconName = opt.iconName ? opt.iconName : 'default-icon';
                 return (
-                    <li className={`list-li icon ${iconName}`} key={i}>
+                    <li className={`list-li icon ${iconName}`} key={j}>
                         <a href={opt.url} target="_blank">
                             <div className="intro">
                                 <h3>{opt.name}</h3>
@@ -20,6 +19,23 @@ const List = props => {
                 );
             })}
         </ul>
+    );
+};
+
+const List = props => {
+    const { list } = props;
+    return (
+        <div className="classify-box">
+            {Object.keys(list).forEach((key, i) => {
+                const items = list[key];
+                return (
+                    <React.Fragment>
+                        <h3>{key}</h3>
+                        <Classify items={items} />
+                    </React.Fragment>
+                );
+            })}
+        </div>
     );
 };
 

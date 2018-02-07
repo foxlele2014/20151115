@@ -18964,18 +18964,17 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var List = function List(props) {
-    var list = props.list;
+var Classify = function Classify(props) {
+    var items = props.items;
 
     return _react2.default.createElement(
         'ul',
         { className: 'list' },
-        Object.keys(list).map(function (key, i) {
-            var opt = list[key];
+        items.map(function (opt, j) {
             var iconName = opt.iconName ? opt.iconName : 'default-icon';
             return _react2.default.createElement(
                 'li',
-                { className: 'list-li icon ' + iconName, key: i },
+                { className: 'list-li icon ' + iconName, key: j },
                 _react2.default.createElement(
                     'a',
                     { href: opt.url, target: '_blank' },
@@ -18994,6 +18993,28 @@ var List = function List(props) {
                         )
                     )
                 )
+            );
+        })
+    );
+};
+
+var List = function List(props) {
+    var list = props.list;
+
+    return _react2.default.createElement(
+        'div',
+        { className: 'classify-box' },
+        Object.keys(list).forEach(function (key, i) {
+            var items = list[key];
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'h3',
+                    null,
+                    key
+                ),
+                _react2.default.createElement(Classify, { items: items })
             );
         })
     );
