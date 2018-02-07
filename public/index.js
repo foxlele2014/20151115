@@ -19209,7 +19209,7 @@ module.exports = "/collection/public/images/073cfa92b20e8036e50b5c8d6a94460a.png
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.default = [{
+exports.default = {
     tools: [{
         url: './view/tool/index.html',
         name: '工具集',
@@ -19217,7 +19217,7 @@ exports.default = [{
         iconName: 'tool',
         img: ''
     }]
-}];
+};
 
 /***/ })
 /******/ ]);
