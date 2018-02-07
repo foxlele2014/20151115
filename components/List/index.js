@@ -11,7 +11,7 @@ const Classify = props => {
                     <li className={`list-li icon ${iconName}`} key={j}>
                         <a href={opt.url} target="_blank">
                             <div className="intro">
-                                <h3>{opt.name}</h3>
+                                <h4>{opt.name}</h4>
                                 <p>{opt.description}</p>
                             </div>
                         </a>
