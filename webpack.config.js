@@ -13,7 +13,7 @@ const webpackConfig = {
         tools: path.resolve(__dirname, 'page/tool/tools.js')
     },
     output: {
-        filename: '[name].js',
+        filename: '[name].js?[hash]',
         path: path.resolve(__dirname, 'public')
     },
     resolve: {
