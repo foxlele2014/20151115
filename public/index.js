@@ -18967,7 +18967,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Classify = function Classify(props) {
     var items = props.items;
 
-    console.log(props);
     return _react2.default.createElement(
         'ul',
         { className: 'list' },
@@ -19004,7 +19003,6 @@ var List = function List(props) {
 
     return Object.keys(list).map(function (key, i) {
         var items = list[key];
-        console.log(key, list[key]);
         return _react2.default.createElement(
             'div',
             { className: 'classify-box', key: 'classify_' + key },
@@ -19064,7 +19062,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, ".list .list-li {\n  float: left;\n  margin: 0px 20px 20px 0px;\n}\n.list .icon {\n  width: 100px;\n  height: 100px;\n  border: 1px solid #999;\n  border-radius: 5px;\n}\n.list .default-icon {\n  background: url(" + __webpack_require__(17) + ") no-repeat;\n  background-size: 100px;\n}\n.list a {\n  width: 100px;\n  height: 100px;\n  display: inline-block;\n  position: relative;\n}\n.list a:hover .intro {\n  display: block;\n}\n.list .intro {\n  display: none;\n  width: 100%;\n  height: 100%;\n  padding: 5px;\n  box-sizing: border-box;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.5);\n  color: #fff;\n  text-align: center;\n}\n.list .intro h3,\n.list .intro p {\n  font-size: 14px;\n  line-height: 24px;\n}\n", ""]);
+exports.push([module.i, ".classify-box {\n  margin-bottom: 20px;\n}\n.classify-box h3 {\n  color: #666;\n  line-height: 30px;\n  margin-bottom: 10px;\n}\n.list {\n  content: ' ';\n  display: block;\n  clear: both;\n}\n.list .list-li {\n  float: left;\n  margin: 0px 20px 20px 0px;\n}\n.list .icon {\n  width: 100px;\n  height: 100px;\n  border: 1px solid #999;\n  border-radius: 5px;\n}\n.list .default-icon {\n  background: url(" + __webpack_require__(17) + ") no-repeat;\n  background-size: 100px;\n}\n.list a {\n  width: 100px;\n  height: 100px;\n  display: inline-block;\n  position: relative;\n}\n.list a:hover .intro {\n  display: block;\n}\n.list .intro {\n  display: none;\n  width: 100%;\n  height: 100%;\n  padding: 5px;\n  box-sizing: border-box;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.5);\n  color: #fff;\n  text-align: center;\n  overflow: hidden;\n}\n.list .intro h4 {\n  font-size: 14px;\n  line-height: 24px;\n}\n.list .intro p {\n  font-size: 12px;\n  line-height: 20px;\n}\n", ""]);
 
 // exports
 
