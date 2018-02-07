@@ -19002,10 +19002,10 @@ var List = function List(props) {
     var list = props.list;
 
     return Object.keys(list).map(function (key, i) {
-        _react2.default.createElement(
+        var items = list[key];
+        return _react2.default.createElement(
             'div',
             { className: 'classify-box' },
-            'const items = list[key]; return (',
             _react2.default.createElement(
                 _react2.default.Fragment,
                 null,
@@ -19015,8 +19015,7 @@ var List = function List(props) {
                     key
                 ),
                 _react2.default.createElement(Classify, { items: items })
-            ),
-            ');'
+            )
         );
     });
 };
