@@ -1437,7 +1437,7 @@ module.exports = focusNode;
 /* 17 */
 /***/ (function(module, exports) {
 
-module.exports = "collection/public/images/89d218e146971cc4277526db32f6cf98.png";
+module.exports = "./public/images/89d218e146971cc4277526db32f6cf98.png";
 
 /***/ }),
 /* 18 */
@@ -19173,7 +19173,7 @@ exports.push([module.i, ".nav .tool {\n  background: url(" + __webpack_require__
 /* 39 */
 /***/ (function(module, exports) {
 
-module.exports = "collection/public/images/073cfa92b20e8036e50b5c8d6a94460a.png";
+module.exports = "./public/images/073cfa92b20e8036e50b5c8d6a94460a.png";
 
 /***/ }),
 /* 40 */

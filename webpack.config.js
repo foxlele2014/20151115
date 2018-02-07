@@ -54,7 +54,7 @@ const webpackConfig = {
                         loader: 'file-loader',
                         options: {
                             outputPath: 'images/',
-                            publicPath: 'collection/public/'
+                            publicPath: './public/'
                         }
                     }
                 ]
