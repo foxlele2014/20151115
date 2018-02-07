@@ -3,6 +3,7 @@ import React from 'react';
 
 const Classify = props => {
     const { items } = props;
+    console.log(props);
     return (
         <ul className="list">
             {items.map((opt, j) => {
@@ -26,8 +27,9 @@ const List = props => {
     const { list } = props;
     return Object.keys(list).map((key, i) => {
         const items = list[key];
+        console.log(key, list[key]);
         return (
-            <div className="classify-box">
+            <div className="classify-box" key={`classify_${key}`}>
                 <React.Fragment>
                     <h3>{key}</h3>
                     <Classify items={items} />

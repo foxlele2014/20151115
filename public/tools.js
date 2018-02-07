@@ -18967,6 +18967,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Classify = function Classify(props) {
     var items = props.items;
 
+    console.log(props);
     return _react2.default.createElement(
         'ul',
         { className: 'list' },
@@ -19003,9 +19004,10 @@ var List = function List(props) {
 
     return Object.keys(list).map(function (key, i) {
         var items = list[key];
+        console.log(key, list[key]);
         return _react2.default.createElement(
             'div',
-            { className: 'classify-box' },
+            { className: 'classify-box', key: 'classify_' + key },
             _react2.default.createElement(
                 _react2.default.Fragment,
                 null,
