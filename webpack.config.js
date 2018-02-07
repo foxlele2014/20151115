@@ -41,6 +41,7 @@ const webpackConfig = {
             },
             {
                 test: /\.less$/,
+                //不需要写options时，可以直接use数组直接填写loader的名字
                 use: ['style-loader', 'css-loader', 'less-loader']
             },
             {
@@ -54,6 +55,9 @@ const webpackConfig = {
                         loader: 'file-loader',
                         options: {
                             outputPath: 'images/',
+                            //因为html放的目录不一致，假如只写public/的话，就会相对于当前目录去寻找img，就是./public/images/
+                            //有个html是放在根目录，其他的放在view里边= =。所以有点尴尬。
+                            //输出返回到样式或者js里的图片路径是publicPath/outputPath/imgName
                             publicPath: '/collection/public/'
                         }
                     }

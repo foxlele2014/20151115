@@ -18970,7 +18970,8 @@ var List = function List(props) {
     return _react2.default.createElement(
         'ul',
         { className: 'list' },
-        list.map(function (opt, i) {
+        Object.keys(list).map(function (key, i) {
+            var opt = list[key];
             var iconName = opt.iconName ? opt.iconName : 'default-icon';
             return _react2.default.createElement(
                 'li',
@@ -19186,11 +19187,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = [{
-    url: './view/tool/index.html',
-    name: '工具集',
-    description: '收集各类经常使用的网站',
-    iconName: 'tool',
-    img: ''
+    tools: [{
+        url: './view/tool/index.html',
+        name: '工具集',
+        description: '收集各类经常使用的网站',
+        iconName: 'tool',
+        img: ''
+    }]
 }];
 
 /***/ })

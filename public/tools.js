@@ -18970,7 +18970,8 @@ var List = function List(props) {
     return _react2.default.createElement(
         'ul',
         { className: 'list' },
-        list.map(function (opt, i) {
+        Object.keys(list).map(function (key, i) {
+            var opt = list[key];
             var iconName = opt.iconName ? opt.iconName : 'default-icon';
             return _react2.default.createElement(
                 'li',

@@ -5,7 +5,8 @@ const List = props => {
     const { list } = props;
     return (
         <ul className="list">
-            {list.map((opt, i) => {
+            {Object.keys(list).map((key, i) => {
+                const opt = list[key];
                 const iconName = opt.iconName ? opt.iconName : 'default-icon';
                 return (
                     <li className={`list-li icon ${iconName}`} key={i}>
